@@ -1,4 +1,13 @@
 """
+@author: Alexandre MORIQUAND
+
+This is a school project.
+
+
+"""
+
+
+"""
 function power, but better ??
 """
 def pow2(a,b):
