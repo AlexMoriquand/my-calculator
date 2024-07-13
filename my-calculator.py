@@ -1,13 +1,4 @@
 
-
-"""
-power two  numbers
-"""
-def pow(a,b):
-    return a*b
-
-
-
 """
 substract two  numbers
 """
@@ -71,13 +62,9 @@ def main():
             print(f"{returnNumber}")
         
         if choice == "3":
-
-            number1 = float(input("Enter first number: "))
-            number2 = float(input("Enter second number: "))
-            returnNumber = pow(number1,number2)
-            print("result is : ")
-            print(f"{returnNumber}")
-
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            print(f"Result: {sum(num1, num2)}")
         if choice == "4":
             try : 
                 number1 = float(input("Enter first number: "))
