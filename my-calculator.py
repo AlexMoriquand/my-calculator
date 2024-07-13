@@ -1,7 +1,18 @@
+"""
+Divide two number, the second one must be different than 0 otherwise it will failed
+"""
+def realDiv(a,b):
+    if b != 0:
+        return a/b
+    else :
+        raise ValueError("the second number cannot be negative")
+
+
 
 """
 Add two numbers together and return result.
 """
+
 def sum(a, b):
     return a + b
 
@@ -16,8 +27,10 @@ def main():
         print("Select operation :")
         print("1. Addition")
         print("2. Subtraction")
+        
         print("3. Power")
-        print("4. Quit (or CTRL + C)")
+        print("4. Division")
+        print("5. Quit (or CTRL + C)")
 
         choice = input("Enter choice : ")
 
@@ -40,6 +53,15 @@ def main():
             num2 = float(input("Enter second number: "))
             print(f"Result: {sum(num1, num2)}")
         if choice == "4":
+            try : 
+                number1 = float(input("Enter first number: "))
+                number2 = float(input("Enter second number: "))
+                returnNumber = realDiv(number1,number2)
+                print("result is : ")
+                print(f"{returnNumber}")
+            except ValueError: 
+                print("please enter a number different than 0 for the second number")
+        if choice == "5" :
             break
         else:
             print("Invalid input")
