@@ -1,3 +1,8 @@
+"""
+function power, but better ??
+"""
+def pow2(a,b):
+    return a *b
 
 """
 substract two  numbers
@@ -62,9 +67,12 @@ def main():
             print(f"{returnNumber}")
         
         if choice == "3":
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
-            print(f"Result: {sum(num1, num2)}")
+            number1 = float(input("Enter first number: "))
+            number2 = float(input("Enter second number: "))
+            returnNumber = pow2(number1,number2)
+            print("result is : ")
+            print(f"{returnNumber}")
+
         if choice == "4":
             try : 
                 number1 = float(input("Enter first number: "))
