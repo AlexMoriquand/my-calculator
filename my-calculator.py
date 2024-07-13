@@ -1,3 +1,13 @@
+
+"""
+substract two  numbers
+"""
+def sub(a,b):
+    return a - b
+
+
+
+
 """
 Divide two number, the second one must be different than 0 otherwise it will failed
 """
@@ -45,9 +55,12 @@ def main():
                 print("please enter a valid number (float)")
             #print(f"Result: {sum(num1, num2)}")
         if choice == "2":
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
-            print(f"Result: {sum(num1, num2)}")
+            number1 = float(input("Enter first number: "))
+            number2 = float(input("Enter second number: "))
+            returnNumber = sub(number1,number2)
+            print("result is : ")
+            print(f"{returnNumber}")
+        
         if choice == "3":
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
